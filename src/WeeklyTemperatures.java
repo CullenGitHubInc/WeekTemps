@@ -64,7 +64,7 @@ public class WeeklyTemperatures {
         double weeklyAverage = totalTemperature / days.size();
         System.out.println("\nWeekly Average Temperature: " + String.format("%.2f", weeklyAverage) + "°C");
 
-        // Close the scanner object 
+        // Close the scanner object to prevent leaks 
         scanner.close();
     }
 }
